@@ -18,7 +18,7 @@ scaffold1|size7021754|pilon     maker   CDS     1433    1584    .       +       
 scaffold1|size7021754|pilon     maker   CDS     1660    1807    .       +       1       ID=PSOL00001-TA:cds;Name=PSOL00001-TA:cds;Parent=PSOL00001-TA
 ```
 
-When we did Hi-C scaffolding, we used Hi-C data to correct draft assembly first. Therefore, some of the scaffolds in draft genome were split up as indicated in the "splitBin" file (as follows). However, the original splitBin file was not formatted correctly, i.e. it contained 1bp overlap at left end. We will deal with this later.
+If Hi-C data was used to correct draft assembly first, some of the scaffolds in draft genome would be split up as indicated in the "splitBin" file (as follows). Sometimes the original splitBin file was not formatted correctly, i.e. it contained 1bp overlap at left end. We will deal with this later.
 
 ```
 scaffold1       scaffold1_2     100000  400000  300000
