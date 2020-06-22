@@ -7,4 +7,4 @@ bash remove_alternative_splicing.sh dmel  # name_of_species
 ```
 
 ### File requirements
-Only two input files needed: species.gff and species_protein.fasta. You can change "species" to any words, just  make sure these two files have same prefix. And also put the perl scripts remove_alternative_splicing.pl in the same dir/
+Only two input files needed: "species.gff" and "species_protein.fasta". You can change "species" to any words, just  make sure these two files have same prefix. And also put the perl scripts "remove_alternative_splicing.pl" in the same dir.
