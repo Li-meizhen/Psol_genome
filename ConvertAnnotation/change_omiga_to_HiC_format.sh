@@ -34,10 +34,8 @@ for chr in `cat sort_1_chr.temp`; do grep $chr sort_2_loci_sorted_genes.temp >>s
 sed 's/.*Name=//' sort_3_chr_sorted_genes.temp >sort_4_genelist.temp
 for gene in `cat sort_4_genelist.temp`;do grep $gene HiC_not_sorted.temp >>$hicgff;done
 
-
 # ----------------------- delete temp files--------------------------------#
 mkdir original_files
 mv $omigagff $splitbin $hicassembly original_files
-
 mkdir tmp
-mv $omigagff* *.temp $splitbin* $hicassembly*
+mv $omigagff* *.temp $splitbin* $hicassembly* tmp
