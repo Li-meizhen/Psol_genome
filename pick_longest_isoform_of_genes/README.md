@@ -1,5 +1,5 @@
 ### Introduction
-In some analyses, eg. genome synteny and ortholog assignment, we are supposed to only keep one alternative splicing isoform for each gene. Usually, we choose the longest one. Under most circumstances, we would use RefSeq genome annotation file (gff3) and protein sequences (fasta) for downstream analyses. This script was used to keep pick the longest isoform for each protein coding gene in RefSeq format.
+In some analyses, eg. genome synteny and ortholog assignment, we are supposed to only keep one alternative splicing isoform for each gene. Usually, we choose the longest one. Under most circumstances, we would use RefSeq genome annotation file (gff3) and protein sequences (fasta) for downstream analyses. This script was used to pick the longest isoform for each protein coding gene in RefSeq format.
 
 ### Usage
 ```bash

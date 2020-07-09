@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 
-# Usage: perl category_count.pl
+# Usage: perl 03_category_count.pl
 
 my @category_files = qw/1-1-1 N-N-N mealybug Hemiptera Coleoptera Diptera Lepidoptera Hymenoptera SD other/;
 my @category_count;

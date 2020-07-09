@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-# Usage: perl 01_category_select.pl numbers.txt
+# Usage: perl 02_category_select.pl numbers.txt
 # Species: Aech Agam Agla Amel Apis Bmor Btab Clec Csol Dmel Dple Hhal Nvit Phum Plon Psol Rpro Tcas Turt
 
 use strict;

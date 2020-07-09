@@ -9,13 +9,13 @@ bash change_omiga_to_HiC_format.sh Pacbio.gff3 split_bin HiC_assembly.agp HiC_V3
 ### File requirements
 First, we need the original gff3 file, which is formatted like this:
 ```
-##sequence-region scaffold1|size7021754|pilon 1 7026800
-scaffold1|size7021754|pilon     maker   gene    1433    3852    .       +       .       ID=PSOL00001;Name=PSOL00001
-scaffold1|size7021754|pilon     maker   mRNA    1433    3852    .       +       .       ID=PSOL00001-TA;Name=PSOL00001-TA;Parent=PSOL00001
-scaffold1|size7021754|pilon     maker   exon    1433    1584    .       +       .       ID=PSOL00001-TA:exon1;Name=PSOL00001-TA:exon1;Parent=PSOL00001-TA
-scaffold1|size7021754|pilon     maker   exon    1660    1807    .       +       .       ID=PSOL00001-TA:exon2;Name=PSOL00001-TA:exon2;Parent=PSOL00001-TA
-scaffold1|size7021754|pilon     maker   CDS     1433    1584    .       +       0       ID=PSOL00001-TA:cds;Name=PSOL00001-TA:cds;Parent=PSOL00001-TA
-scaffold1|size7021754|pilon     maker   CDS     1660    1807    .       +       1       ID=PSOL00001-TA:cds;Name=PSOL00001-TA:cds;Parent=PSOL00001-TA
+##sequence-region scaffold1 1 7026800
+scaffold1     maker   gene    1433    3852    .       +       .       ID=PSOL00001;Name=PSOL00001
+scaffold1     maker   mRNA    1433    3852    .       +       .       ID=PSOL00001-TA;Name=PSOL00001-TA;Parent=PSOL00001
+scaffold1     maker   exon    1433    1584    .       +       .       ID=PSOL00001-TA:exon1;Name=PSOL00001-TA:exon1;Parent=PSOL00001-TA
+scaffold1     maker   exon    1660    1807    .       +       .       ID=PSOL00001-TA:exon2;Name=PSOL00001-TA:exon2;Parent=PSOL00001-TA
+scaffold1     maker   CDS     1433    1584    .       +       0       ID=PSOL00001-TA:cds;Name=PSOL00001-TA:cds;Parent=PSOL00001-TA
+scaffold1     maker   CDS     1660    1807    .       +       1       ID=PSOL00001-TA:cds;Name=PSOL00001-TA:cds;Parent=PSOL00001-TA
 ```
 
 If Hi-C data was used to correct draft assembly first, some of the scaffolds in draft genome would be split up as indicated in the "splitBin" file (as follows). Sometimes the original splitBin file was not formatted correctly, i.e. it contained 1bp overlap at left end. We will deal with this later.
